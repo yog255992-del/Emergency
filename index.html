@@ -1,76 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Emergency - Home</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body { margin:0; font-family:Arial; background:#f1f4f9; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emergency Help - Home</title>
 
-        .topbar {
-            background:#0077ff;
-            padding:18px;
-            color:white;
-            font-size:22px;
-            text-align:center;
-            font-weight:bold;
-        }
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #f7f7f7;
+}
 
-        .container {
-            padding:15px;
-            display:grid;
-            grid-template-columns:repeat(2, 1fr);
-            gap:15px;
-        }
+header {
+  background: #ffffff;
+  padding: 18px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
 
-        .card {
-            background:white;
-            padding:25px;
-            border-radius:15px;
-            box-shadow:0 3px 10px rgba(0,0,0,0.2);
-            text-align:center;
-            font-size:15px;
-            font-weight:bold;
-        }
+.container {
+  padding: 20px;
+}
 
-        .nav {
-            position:fixed;
-            bottom:0; left:0; right:0;
-            background:white;
-            display:flex;
-            justify-content:space-around;
-            padding:12px 0;
-            box-shadow:0 -3px 10px rgba(0,0,0,0.15);
-        }
+.card {
+  background: white;
+  padding: 18px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  font-size: 18px;
+}
 
-        .nav a {
-            color:#333;
-            text-decoration:none;
-            font-size:14px;
-            font-weight:bold;
-        }
+a {
+  text-decoration: none;
+  color: black;
+}
 
-        .nav .active {
-            color:#0077ff;
-        }
-    </style>
+.navbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.15);
+}
+
+.navbar a {
+  font-size: 16px;
+}
+</style>
 </head>
+
 <body>
 
-<div class="topbar">Emergency</div>
+<header>Emergency Help</header>
 
 <div class="container">
-    <a class="card" href="emergency.html">📞 Emergency Numbers</a>
-    <a class="card" href="services.html">🛟 All Services</a>
-    <a class="card" href="about.html">ℹ️ About App</a>
-    <a class="card" href="profile.html">👤 Profile</a>
+
+  <a href="emergency.html">
+    <div class="card">🚨 Emergency Contacts</div>
+  </a>
+
+  <a href="services.html">
+    <div class="card">📑 All Services</div>
+  </a>
+
+  <a href="about.html">
+    <div class="card">ℹ️ About This App</div>
+  </a>
+
 </div>
 
-<div class="nav">
-    <a class="active" href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="emergency.html">Emergency</a>
-    <a href="about.html">About</a>
-    <a href="profile.html">Profile</a>
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="emergency.html">Emergency</a>
+  <a href="profile.html">Profile</a>
+  <a href="about.html">About</a>
 </div>
 
 </body>
