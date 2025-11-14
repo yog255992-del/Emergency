@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Profile</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body { margin:0; font-family:Arial; background:#eef1f5; }
-        .topbar { background:#0077ff; padding:18px; color:white; font-size:22px; text-align:center; font-weight:bold; }
-        .card {
-            background:white; margin:20px; padding:25px;
-            border-radius:12px; text-align:center;
-            box-shadow:0 3px 10px rgba(0,0,0,0.12);
-        }
-        .card h2 { margin:0; font-size:22px; }
-        .card p { color:#555; font-size:16px; }
-        .nav { position:fixed; bottom:0; left:0; right:0; background:white;
-            display:flex; justify-content:space-around; padding:12px 0; 
-            box-shadow:0 -3px 10px rgba(0,0,0,0.12); }
-        .nav a { text-decoration:none; color:#333; font-size:14px; }
-        .active { color:#0077ff; font-weight:bold; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Profile</title>
+
+<style>
+body { margin:0; background:#f7f7f7; font-family:Arial; }
+header { background:white; padding:18px; text-align:center; font-size:22px; font-weight:bold; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
+
+.box {
+  background:white; padding:20px; margin:20px;
+  border-radius:10px; box-shadow:0 0 8px rgba(0,0,0,0.1);
+  font-size:18px;
+}
+
+.navbar {
+  position:fixed; bottom:0; width:100%; background:white;
+  display:flex; justify-content:space-around; padding:12px 0;
+  box-shadow:0 -2px 5px rgba(0,0,0,0.2);
+}
+</style>
 </head>
 
 <body>
 
-<div class="topbar">Profile</div>
+<header>Your Profile</header>
 
-<div class="card">
-    <h2>Yash Sengwal</h2>
-    <p>Student Developer</p>
+<div class="box">
+  <b>Name:</b> Yash<br>
+  <b>App User ID:</b> 001<br>
+  <b>Location:</b> India<br>
 </div>
 
-<div class="nav">
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="emergency.html">Emergency</a>
-    <a href="about.html">About</a>
-    <a class="active" href="profile.html">Profile</a>
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="emergency.html">Emergency</a>
+  <a href="profile.html">Profile</a>
+  <a href="about.html">About</a>
 </div>
 
 </body>
