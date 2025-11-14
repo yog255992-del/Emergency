@@ -3,66 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emergency Help Portal</title>
+    <title>Help Center</title>
+
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: #f7f7f7;
             margin: 0;
-            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f4f9;
+        }
+
+        /* Top Bar */
+        .topbar {
+            background: #0077ff;
+            padding: 15px;
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
             text-align: center;
         }
-        header {
-            background: #d9534f;
-            color: white;
-            padding: 20px;
-            font-size: 25px;
-            font-weight: bold;
-        }
+
+        /* Card Layout */
         .container {
-            margin: 20px auto;
-            width: 90%;
-            max-width: 500px;
-        }
-        .btn {
-            display: block;
-            width: 100%;
             padding: 15px;
-            margin: 12px 0;
-            background: #0275d8;
-            color: white;
-            text-decoration: none;
-            font-size: 20px;
-            border-radius: 8px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
         }
-        .btn:hover {
-            background: #025aa5;
-        }
-        footer {
-            margin-top: 30px;
-            padding: 10px;
-            background: #333;
-            color: white;
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+            text-align: center;
             font-size: 14px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Bottom Navigation Bar */
+        .navbar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-around;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-item {
+            text-align: center;
+            font-size: 14px;
+            color: #444;
+        }
+
+        .nav-item.active {
+            color: #0077ff;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
 
-<header>Emergency Help Portal</header>
+    <div class="topbar">Help Center</div>
 
-<div class="container">
-    <a class="btn" href="tel:112">🚨 Police, Fire, Ambulance – 112</a>
-    <a class="btn" href="tel:1091">👩 Women Helpline – 1091</a>
-    <a class="btn" href="tel:1098">🧒 Child Helpline – 1098</a>
-    <a class="btn" href="tel:108">🏥 Medical Emergency – 108</a>
-    <a class="btn" href="tel:101">🔥 Fire Emergency – 101</a>
-    <a class="btn" href="tel:102">🚑 Ambulance – 102</a>
-    <a class="btn" href="tel:104">🩺 Health Helpline – 104</a>
-    <a class="btn" href="tel:1070">🌪️ Disaster Management – 1070</a>
-</div>
+    <div class="container">
+        <div class="card">Disaster Help</div>
+        <div class="card">Child Helpline</div>
+        <div class="card">Women Helpline</div>
+        <div class="card">Fire Support</div>
+        <div class="card">Ambulance</div>
+        <div class="card">First Aid Info</div>
+    </div>
 
-<footer>Made by Yash Sengwal</footer>
+    <div class="navbar">
+        <div class="nav-item active">Home</div>
+        <div class="nav-item">Services</div>
+        <div class="nav-item">About</div>
+        <div class="nav-item">Profile</div>
+    </div>
 
+</body>
+</html>
 </body>
 </html>
