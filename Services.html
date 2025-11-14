@@ -1,49 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Services</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body { margin:0; font-family:Arial; background:#eef1f5; }
-        .topbar { background:#0077ff; padding:18px; color:white; text-align:center; font-size:22px; font-weight:bold; }
-        .list { padding:20px; }
-        .item {
-            background:white;
-            padding:15px;
-            margin-bottom:12px;
-            border-radius:10px;
-            box-shadow:0 3px 10px rgba(0,0,0,0.12);
-            font-size:17px;
-            font-weight:bold;
-        }
-        .nav { position:fixed; bottom:0; left:0; right:0; background:white;
-            display:flex; justify-content:space-around; padding:12px 0; 
-            box-shadow:0 -3px 10px rgba(0,0,0,0.12); }
-        .nav a { text-decoration:none; color:#333; font-size:14px; }
-        .active { color:#0077ff; font-weight:bold; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All Services</title>
+
+<style>
+body { font-family: Arial; margin: 0; background: #f7f7f7; }
+header { padding: 18px; background: white; text-align: center; font-size: 22px; font-weight: bold; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+
+.card {
+  background: white; padding: 18px; margin: 15px;
+  border-radius: 10px; box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  font-size: 18px;
+}
+
+.navbar {
+  position: fixed; bottom: 0; width: 100%;
+  background: white; display: flex; justify-content: space-around;
+  padding: 12px 0; box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+}
+</style>
 </head>
 
 <body>
 
-<div class="topbar">All Services</div>
+<header>All Services</header>
 
-<div class="list">
-    <div class="item">Disaster Management</div>
-    <div class="item">Women Safety</div>
-    <div class="item">Child Protection</div>
-    <div class="item">Medical Support</div>
-    <div class="item">Fire Safety</div>
-    <div class="item">Police Assistance</div>
-    <div class="item">First Aid Guide</div>
-</div>
+<div class="card">📌 Missing Persons</div>
+<div class="card">📌 Disaster Management</div>
+<div class="card">📌 Medical Support</div>
+<div class="card">📌 Cyber Crime Help</div>
+<div class="card">📌 Road Accident Help</div>
 
-<div class="nav">
-    <a href="index.html">Home</a>
-    <a class="active" href="services.html">Services</a>
-    <a href="emergency.html">Emergency</a>
-    <a href="about.html">About</a>
-    <a href="profile.html">Profile</a>
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="emergency.html">Emergency</a>
+  <a href="profile.html">Profile</a>
+  <a href="about.html">About</a>
 </div>
 
 </body>
