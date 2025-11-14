@@ -1,36 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>About App</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body { margin:0; font-family:Arial; background:#f2f2f2; }
-        .topbar { background:#0077ff; padding:18px; color:white; font-weight:bold; text-align:center; font-size:22px; }
-        .box { background:white; padding:20px; margin:15px; border-radius:10px; box-shadow:0 3px 10px rgba(0,0,0,0.12); font-size:16px; line-height:24px; }
-        .nav { position:fixed; bottom:0; left:0; right:0; background:white;
-            display:flex; justify-content:space-around; padding:12px 0; 
-            box-shadow:0 -3px 10px rgba(0,0,0,0.12); }
-        .nav a { text-decoration:none; color:#333; font-size:14px; }
-        .active { color:#0077ff; font-weight:bold; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About App</title>
+
+<style>
+body { margin:0; background:#f7f7f7; font-family:Arial; }
+header { background:white; padding:18px; text-align:center; font-size:22px; font-weight:bold; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
+
+.box {
+  background:white; padding:20px; margin:20px;
+  border-radius:10px; box-shadow:0 0 8px rgba(0,0,0,0.1);
+  font-size:18px;
+}
+
+.navbar {
+  position:fixed; bottom:0; width:100%; background:white;
+  display:flex; justify-content:space-around; padding:12px 0;
+  box-shadow:0 -2px 5px rgba(0,0,0,0.2);
+}
+</style>
 </head>
 
 <body>
 
-<div class="topbar">About App</div>
+<header>About This App</header>
 
 <div class="box">
-    <h3>Emergency – Help App</h3>
-    <p>Yeh ek emergency support app-style website hai jisme sabhi important helpline numbers, safety guides aur services ek jagah available hain.</p>
-    <p>Made by: <b>Yash Sengwal</b></p>
+  This emergency app is designed by <b>Yash</b> to help people in danger,
+  disaster, or medical emergency situations.  
+  All important helplines are provided in one place.
 </div>
 
-<div class="nav">
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="emergency.html">Emergency</a>
-    <a class="active" href="about.html">About</a>
-    <a href="profile.html">Profile</a>
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="emergency.html">Emergency</a>
+  <a href="profile.html">Profile</a>
+  <a href="about.html">About</a>
 </div>
 
 </body>
